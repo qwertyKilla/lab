@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Моя домашняя страница</title>
+</head>
+<body>
+<p align="center"> <td><font color="purple"> Приветствую на моей домашней странице</p></font></td><br>
+<p align="center"><em> Ковита Нина </p></em><br>
+<p align="center"> Напишите мне письмо на ninamilk34@gmail.com</p><br>
+<b> Я очень общительная, из интересов у меня просмотр сериалов и игра на гитаре.</b><br> 
+<p><img src="https://i.gifer.com/embedded/download/fzuD.gif" width="150" height="150" </p><br>
+ <script>
+   function digitalClock() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+      if (hours < 10) hours = "0" + hours;
+      if (minutes < 10) minutes = "0" + minutes;
+      if (seconds < 10) seconds = "0" + seconds;
+        document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+        setTimeout("digitalClock()", 1000);
+   }
+  </script>
+  <div id="id_clock"></div>
+    <script>digitalClock();</script>
+</body>
+</html>
